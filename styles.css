@@ -76,12 +76,14 @@ img{
 }
 
 .info__img{
+    /* max-width: 450px; */
     margin: 2em 0em;
     margin-bottom: 4em;
 }
 
 .img__info{
     position: relative;
+    width: 95%;
 }
 
 
@@ -93,7 +95,7 @@ img{
 .card{
     background-color: #181719;
     position: absolute;
-    width: 300px;
+    width: 250px;
     padding: 1em;
     top: 562px;
     left: 52px;
