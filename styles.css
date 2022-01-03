@@ -119,3 +119,14 @@ img{
     z-index: 1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.card__body{
+    padding: 0.5em 0em;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+.card__para{
+    padding-right: 1em;
+}
