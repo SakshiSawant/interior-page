@@ -33,8 +33,44 @@ header{
     font-size: 1.4rem;
 }
 
+.header{
+    position: relative;
+}
 .nav-toggle{
     padding: 1em;
+    position: absolute;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 0.5em 0em;
+}
+
+.hamburger::before{
+    top: 1px;
+}
+
+.hamburger::after{
+    bottom: 1px;
 }
 
 .nav{
