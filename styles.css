@@ -43,6 +43,7 @@ header{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 100;
 }
 
 .hamburger{
@@ -52,6 +53,7 @@ header{
     height: 4px;
     border-radius: 2px;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .hamburger::before,
@@ -82,7 +84,17 @@ header{
     left: 0;
     right: 0;
     z-index: 2;
-    transform: translateX(0%);
+    transform: translateX(100%);
+}
+
+.nav__item{
+    list-style: none;
+    padding: 1em;
+}
+
+.nav__link{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .nav__list{
@@ -97,14 +109,25 @@ header{
     font-size: 1.8rem;
 }
 
-.nav__item{
-    list-style: none;
-    padding: 1em;
+.nav-open .nav{
+    transform: translateX(0);
 }
 
-.nav__link{
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-7px);
     color: #ffffff;
-    text-decoration: none;
+}
+
+.nav-open .hamburger::after{
+    opacity: 0;
 }
 
 img{
