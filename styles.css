@@ -95,6 +95,7 @@ header{
 .nav__link{
     color: #ffffff;
     text-decoration: none;
+    padding: 2px 0px;
 }
 
 .nav__list{
@@ -128,6 +129,10 @@ header{
 
 .nav-open .hamburger::after{
     opacity: 0;
+}
+
+.active{
+    border-bottom: 2px solid #ffffff;
 }
 
 img{
