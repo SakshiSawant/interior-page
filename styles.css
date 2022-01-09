@@ -36,6 +36,7 @@ header{
 .header{
     position: relative;
 }
+
 .nav-toggle{
     padding: 1em;
     position: absolute;
@@ -223,4 +224,51 @@ img{
 
 .card__para{
     padding-right: 1em;
+}
+
+@media(min-width: 600px){
+    body{
+        max-width: 1420px;
+        margin: auto;
+    }
+
+    header{
+        padding: 2em;
+        padding-top: 4em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .nav{
+        transform: translateX(0);
+        background-color: transparent;
+    }
+
+    .nav__list{
+        position: relative;
+        top: 12px;
+        left: 420px;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .container{
+        display: flex;
+        padding-top: 4em;
+    }
+
+    .info{
+        padding-top: 8em;
+    }
+
+    .card{
+        width: 300px;
+        top: 680px;
+        left: 960px;
+    }
+    
 }
